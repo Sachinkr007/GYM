@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* styles.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Styles */
+.hero {
+  background-color: #f8f8f8;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: cadetblue;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #e67e22;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Section Styles */
+section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about p {
+  margin-bottom: 20px;
+}
+
+.classes {
+  background-color: #f8f8f8;
+}
+
+.classes .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.class {
+  width: 300px;
+  margin: 0 20px 40px;
+}
+
+.class img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.class h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.class p {
+  font-size: 16px;
+  color: #666;
+}
+
+.membership .container {
+  display: flex;
+  justify-content: center;
+}
+
+.plan {
+  width: 300px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.plan h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.plan p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.plan:last-child {
+  margin-right: 0;
+}
+
+/* Contact Form Styles */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact button {
+  display: inline-block;
+  background-color: #e67e22;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1 class="logo">Gym Website</h1>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero" id="home">
+      <div class="container">
+        <h2>Welcome to Our Gym!</h2>
+        <p>Join us for a healthy and active lifestyle.</p>
+        <a href="#membership" class="btn">Get Started</a>
+      </div>
+    </div>
+  </header>
+  
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit lectus nec venenatis vehicula.</p>
+      <p>Proin sagittis sem id felis faucibus, vel tincidunt ligula efficitur. Nulla facilisi.</p>
+    </div>
+  </section>
+
+  <section class="classes" id="classes">
+    <div class="container">
+      <h2>Our Classes</h2>
+      <div class="class">
+        <img src="class1.jpg" alt="Class 1">
+        <h3>Yoga</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="class">
+        <img src="class2.jpg" alt="Class 2">
+        <h3>Zumba</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="class">
+        <img src="class3.jpg" alt="Class 3">
+        <h3>Spin Class</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="membership" id="membership">
+    <div class="container">
+      <h2>Membership Plans</h2>
+      <div class="plan">
+        <h3>Basic</h3>
+        <p>Access to gym facilities</p>
+        <p>Price: $29.99/month</p>
+      </div>
+      <div class="plan">
+        <h3>Standard</h3>
+        <p>Access to gym facilities + Group fitness classes</p>
+        <p>Price: $49.99/month</p>
+      </div>
+      <div class="plan">
+        <h3>Premium</h3>
+        <p>Access to gym facilities + Group fitness classes + Personal training sessions</p>
+        <p>Price: $79.99/month</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>For any inquiries or to join our gym, please fill out the form below:</p>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Gym Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
